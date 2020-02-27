@@ -108,9 +108,9 @@ module "service-project" {
   name              = var.service_project_name
   random_project_id = "false"
 
-  org_id             = var.organization_id
+  #org_id             = var.organization_id
   folder_id          = var.folder_id
-  billing_account    = var.billing_account
+  #billing_account    = var.billing_account
   shared_vpc_enabled = true
 
   shared_vpc         = module.vpc.project_id
